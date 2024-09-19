@@ -1,0 +1,18 @@
+<div class="message-slider">
+  <span class="arrow left-arrow" (click)="previousSlide()">&#10094;</span>
+
+  <div class="display" *ngFor="let item of notificationImageArray; let i = index" [class.active]="currentIndex === i">
+    <div class="notification-container">
+      <a [routerLink]="['/product-detail', item.productId]">
+        <img [src]="item.imageUrl" alt="Image" class="notification-image">
+      </a>
+      <div class="message">{{ item.notification }}</div>
+    </div>
+  </div>
+
+  <span class="arrow right-arrow" (click)="nextSlide()">&#10095;</span>
+</div>
+
+<div class="dots-container">
+  <span class="dot" *ngFor="let dot of dots; let i = index" [class.active]="currentIndex === i" (click)="setCurrentIndex(i)"></span>
+</div>

@@ -1,0 +1,26 @@
+.product-detail {
+    text-align: center; /* Center the content */
+    padding: 10px; /* Optional: Add padding around the container */
+  }
+  
+  /* Style the image */
+  .product-detail img {
+    width: 294px; /* Set fixed width */
+    height: 396px; /* Set fixed height */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    display: block; /* Remove bottom space/gap */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  /* Style for price and button */
+  .product-detail p {
+    margin: 10px 0; /* Add space above and below the price text */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .product-detail button {
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  }
+  

@@ -1,0 +1,7 @@
+<div class="cart">
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <img [src]="item.image" alt="Cart Item Image">
+      <p>Price: {{ item.price }}</p>
+    </div>
+  </div>
+  

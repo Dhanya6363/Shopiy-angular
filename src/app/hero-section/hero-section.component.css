@@ -1,0 +1,85 @@
+.message-slider {
+  position: relative;
+  left: 5%;
+  width: 90%; 
+  top: 3%;
+  height: 10%; 
+  overflow: hidden;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.display {
+  width: 100%;
+  height: 100%;
+  display: none;
+  border: white;
+  border-radius: 10px;
+  border-color: #bbb;
+}
+
+.display.active {
+  display: block;
+}
+
+.message {
+  font-size: 25px;
+  text-align: center; /* Center the text */
+  margin-bottom: auto; /* Push the text to the top */
+  width: 100%; /* Ensure text is centered horizontally */
+}
+
+.notification-container {
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items horizontally */
+  height: 100%; /* Ensure container takes full height */
+}
+
+.notification-image {
+  margin-top: auto; 
+  width: 757px; /* Increased width */
+  height: 503px; /* Increased height */
+  object-fit: contain; 
+}
+
+/* Arrow styles */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #333;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+/* Dots container */
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}

@@ -1,0 +1,5 @@
+<div class="product-grid">
+  <div *ngFor="let image of products" class="product-item">
+    <img [src]="image" (click)="viewProduct(image)" alt="Product Image">
+  </div>
+</div>

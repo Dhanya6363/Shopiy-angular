@@ -1,0 +1,23 @@
+/* Ensure that the container takes up the full width and wraps items horizontally */
+.product-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    overflow-x: auto; /* Allow horizontal scrolling if items exceed container width */
+    padding: 10px; /* Optional: Add padding around the container */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  /* Style each product item */
+  .product-item {
+    flex: 0 0 auto; /* Prevent items from shrinking and growing, keep their width */
+    margin-right: 10px; /* Optional: Add space between images */
+  }
+  
+  /* Style images to fit their container and maintain aspect ratio */
+  .product-item img {
+    max-width: 100%; /* Ensure images fit within their container */
+    width: 250px;
+    height: 350px; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space/gap */
+  }
+  

@@ -1,0 +1,11 @@
+<div *ngIf="productDetails">
+  <h1>{{ productDetails.title }}</h1>
+  <p>{{ productDetails.description }}</p>
+  <div class="product-images">
+    <img *ngFor="let image of productDetails.images" [src]="image" alt="{{ productDetails.title }}">
+  </div>
+  <p>Price: {{ productDetails.price }}</p>
+  <label for="quantity">Quantity:</label>
+  <input id="quantity" type="number" [(ngModel)]="quantity" min="1" value="1">
+  <button (click)="addToCart()">Add to Cart</button>
+</div>

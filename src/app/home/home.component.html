@@ -1,0 +1,10 @@
+<!-- Header Component -->
+<app-header></app-header>
+
+<!-- Hero Section -->
+<app-hero-section *ngIf="showHeroSection"></app-hero-section>
+
+<!-- Footer Component -->
+<router-outlet (activate)="onRouteChange($event)"></router-outlet>
+
+<app-footer></app-footer>

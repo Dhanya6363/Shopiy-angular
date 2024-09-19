@@ -1,0 +1,55 @@
+.hero-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5f7fa;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #6c757d;
+  }
+  
+  .shop-all-btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .hero-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .hero-image {
+    position: relative;
+    width: 30%;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
